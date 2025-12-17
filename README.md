@@ -37,9 +37,13 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+
 1)TRUTH TABLE FOR FULL ADDER
+
 <img width="342" height="220" alt="image" src="https://github.com/user-attachments/assets/94d06711-afb8-4270-8d33-793de4d6e870" />
+
 2)TRUTH TABLE FOR SUBTRACTOR
+
 <img width="755" height="405" alt="image" src="https://github.com/user-attachments/assets/fbb1b727-071e-49ab-be75-d073320bd2b0" />
 
 
@@ -47,6 +51,7 @@ Borrow out = A'Bin + A'B + BBin
 
 
 **Procedure**
+
 1)Type the program in Quartus software.
 
 2)Compile and run the program.
@@ -59,7 +64,9 @@ Borrow out = A'Bin + A'B + BBin
 
 
 **Program:**
+
 PROGRAM FOR FULLADDER:
+
 ```
 module fa(a,b,cin,sum,carry);
 input a,b,cin;
@@ -68,7 +75,9 @@ assign sum=( (a ^ b)^cin);
 assign carry= ( (a & b)| ( cin &(a ^ b )));
 endmodule
 ```
+
 PROGRAM FOR FULLSUBTRACTOR:
+
 ```
 module fs(a,b,bin,difference,borrow);
 input a,b,bin;
@@ -77,12 +86,17 @@ assign difference= ( (a ^ b)^bin);
 assign borrow= ( ( a & b)| ( bin & ((a ^ b ))));
 endmodule
 ```
+
 Developed by:DHAMODHARAN S RegisterNumber:25009463
 
 **RTL Schematic**
+
 1)FULLADDER
+
 <img width="1159" height="589" alt="image" src="https://github.com/user-attachments/assets/dedd7cae-f126-455c-a0b5-40e7dcd52382" />
+
 2)FULL SUBTRACTOR
+
 <img width="1162" height="588" alt="image" src="https://github.com/user-attachments/assets/4e93a8ce-54ba-4657-b4eb-d707a9292b2b" />
 
 
