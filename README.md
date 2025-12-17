@@ -105,9 +105,13 @@ Developed by:DHAMODHARAN S RegisterNumber:25009463
 
 
 **Output Timing Waveform**
+
 1)FULLADDER
+
 <img width="1167" height="597" alt="image" src="https://github.com/user-attachments/assets/48868fa0-8bb4-4cae-8246-c975e6a9474f" />
+
 2)FULL SUBTRACTOR
+
 <img width="1152" height="592" alt="image" src="https://github.com/user-attachments/assets/c1dea09f-7926-4696-b62d-8ae3ff887b34" />
 
 
