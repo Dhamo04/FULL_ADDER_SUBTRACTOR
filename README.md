@@ -65,26 +65,16 @@ Borrow out = A'Bin + A'B + BBin
 
 **Program:**
 
-PROGRAM FOR FULLADDER:
-
 ```
-module fa(a,b,cin,sum,carry);
-input a,b,cin;
-output sum,carry;
-assign sum=( (a ^ b)^cin);
-assign carry= ( (a & b)| ( cin &(a ^ b )));
+module ex4 (a,b,c,x,y,z,sum,dif,car,bor);
+input a,b,c,x,y,z;
+output sum,dif,car,bor;
+assign sum = a^b^c;
+assign car = a&b | a&c | b&c;
+assign dif = x^y^z;
+assign bor = ~x&z | ~x&y | y&z;
 endmodule
-```
 
-PROGRAM FOR FULLSUBTRACTOR:
-
-```
-module fs(a,b,bin,difference,borrow);
-input a,b,bin;
-output difference,borrow;
-assign difference= ( (a ^ b)^bin);
-assign borrow= ( ( a & b)| ( bin & ((a ^ b ))));
-endmodule
 ```
 
 Developed by:DHAMODHARAN S RegisterNumber:25009463
